@@ -12,18 +12,20 @@
     
     <div class="entries">
     <form action="/PARL_adoption.php">
+        
         <div class="name">
           * Enter Name: <input type="text" name="name" placeholder="NAME" required>
         </div>
+        
         <div class="email">
           * Email: <input type="text" name="email" placeholder="EMAIL" required>
         </div>
-        <div>
+        <div class="quantity">
             Quantity (between 1 and 2):
             <input type="number" name="quantity" min="1" max="2" required>
         </div>
         
-        <div>
+        <div class="button">
         <fieldset>
             <legend>Preference</legend>
             Male<input type="radio" name="sex" value="male" checked></br>
@@ -33,7 +35,7 @@
         </div>
        
        
-        <div>
+        <div class="checkbox">
             <fieldset>
                 <legend>Size</legend>
             Less than 20 pounds<input type="checkbox" name="size" value="small" checked></br>
@@ -41,7 +43,7 @@
             40+ pounds<input type="checkbox" name="size" value="large">
             </fieldset>
         </div>
-        <div>
+        <div class="dropdown">
             Describe your family: 
             <select>
                 <option value="none">No pets/kids</option>
@@ -49,12 +51,12 @@
                 <option value="none">Pets and Kids</option>
             </select>
         </div>
-        <div>
+        <div class="text">
            
-            <textarea rows="4" cols="50">Please add any additional comments or concerns</textarea>
+            <textarea class="textarea" rows="4" cols="50">Please add any additional comments or concerns</textarea>
         </div>
-        <div>
-           <input type="submit">
+        <div class="last">
+           <input  type="submit" class="btn">
         </div>
     </form>
     </div>

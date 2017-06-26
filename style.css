@@ -1,3 +1,63 @@
+body {
+    height: 100%;
+    margin: 0;
+}
+
 .title {
     text-align: center;
+}
+
+.entries {
+    height: 75%;
+    width: 75%;
+    background-color: red;
+    margin: 0 auto;
+}
+
+.name {
+    text-align: center;
+    padding: 20px;
+}
+
+.email {
+    
+    padding: 20px;
+}
+
+.quantity {
+    padding: 20px;
+}
+
+.button {
+    padding: 20px;
+}
+
+.checkbox {
+    padding: 20px;
+}
+
+.dropdown {
+    padding: 20px;
+}
+
+.text {
+    padding: 20px;
+    
+}
+
+.textarea {
+    display: block;
+    margin: 0 auto;
+}
+
+.btn {
+    display: block;
+    margin: 0 auto;
+    width: 10em;
+    height: 25px;
+    
+}
+
+.last {
+    padding: 20px 20px 40px 20px;
 }
