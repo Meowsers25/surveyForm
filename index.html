@@ -3,21 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <form>
+    <div class="title">
+        <h1>PARL Adoption Form</h1>
+    </div>
+    
+    <div class="entries">
+    <form action="/PARL_adoption.php">
         <div class="name">
-       Enter Name: <input type="text" name="name" placeholder="NAME">
-       </div>
+          * Enter Name: <input type="text" name="name" placeholder="NAME">
+        </div>
         <div class="email">
-       Email: <input type="text" name="email" placeholder="EMAIL">
+          * Email: <input type="text" name="email" placeholder="EMAIL">
         </div>
         <div>
             Quantity (between 1 and 2):
-             <input type="number" name="quantity" min="1" max="2">
-             
+            <input type="number" name="quantity" min="1" max="2">
+        </div>
+        
+        <div>
+        <fieldset>
+            <legend>Preference</legend>
+            Male<input type="radio" name="male" value="male" checked/></br>
+            Female<input type="radio" name="female" value="female"/></br>
+            Either<input type="radio" name="either" value="either"/>
+        </fieldset>
+        </div>
+       
+       
+        <div>
+            <fieldset>
+                <legend>Size</legend>
+            Less than 20 pounds<input type="checkbox" name="small"/></br>
+            20 - 40 pounds<input type="checkbox" name="medium"/></br>
+            40+ pounds<input type="checkbox" name="large"/>
+            </fieldset>
         </div>
     </form>
+    </div>
     
     
 </body>
