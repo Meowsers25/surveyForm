@@ -13,10 +13,10 @@
     <div class="entries">
     <form action="/PARL_adoption.php">
         <div class="name">
-          * Enter Name: <input type="text" name="name" placeholder="NAME">
+          * Enter Name: <input type="text" name="name" placeholder="NAME" required>
         </div>
         <div class="email">
-          * Email: <input type="text" name="email" placeholder="EMAIL">
+          * Email: <input type="text" name="email" placeholder="EMAIL" required>
         </div>
         <div>
             Quantity (between 1 and 2):
@@ -26,9 +26,9 @@
         <div>
         <fieldset>
             <legend>Preference</legend>
-            Male<input type="radio" name="male" value="male" checked/></br>
-            Female<input type="radio" name="female" value="female"/></br>
-            Either<input type="radio" name="either" value="either"/>
+            Male<input type="radio" name="sex" value="male" checked></br>
+            Female<input type="radio" name="sex" value="female"></br>
+            Either<input type="radio" name="sex" value="either">
         </fieldset>
         </div>
        
@@ -36,10 +36,25 @@
         <div>
             <fieldset>
                 <legend>Size</legend>
-            Less than 20 pounds<input type="checkbox" name="small"/></br>
-            20 - 40 pounds<input type="checkbox" name="medium"/></br>
-            40+ pounds<input type="checkbox" name="large"/>
+            Less than 20 pounds<input type="checkbox" name="size" value="small" checked></br>
+            20 - 40 pounds<input type="checkbox" name="size" value="medium"></br>
+            40+ pounds<input type="checkbox" name="size" value="large">
             </fieldset>
+        </div>
+        <div>
+            Describe your family: 
+            <select>
+                <option value="none">No pets/kids</option>
+                <option value="none">Kids</option>
+                <option value="none">Pets and Kids</option>
+            </select>
+        </div>
+        <div>
+           
+            <textarea rows="4" cols="50">Please add any additional comments</textarea>
+        </div>
+        <div>
+           <input type="submit">
         </div>
     </form>
     </div>
