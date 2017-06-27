@@ -13,20 +13,20 @@
   
 </head>
 <body>
-    <div class="title">
+    <header class="title">
         <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/41317-200.png"></img>
         <h1>PARL Adoption Form</h1>
-    </div>
+    </header>
     
     <div class="entries">
     <form action="/PARL_adoption.php">
         
         <div class="name">
-          * Enter Name: <input type="text" name="name" placeholder="NAME" required>
+          * Enter Name: <input type="text" name="name" placeholder="Name" required>
         </div>
         
         <div class="email">
-          * Email: <input type="text" name="email" placeholder="EMAIL" required>
+          * Email: <input name="email" type="email" placeholder="Email" required>
         </div>
         <div class="quantity">
             Quantity (between 1 and 2):
@@ -65,6 +65,7 @@
         </div>
         <div class="last">
            <input  type="submit" class="btn">
+           
         </div>
     </form>
     </div>
@@ -73,8 +74,10 @@
 $(document).ready(function(){
     $("form").submit(function(){
         alert("Submitted Form");
+        
     });
 });
+document.getElementById('empty').value="";
 </script>
     
     
