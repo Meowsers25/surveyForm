@@ -5,17 +5,20 @@ body {
 
 .title {
     text-align: center;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: x-large;
 }
 
 .entries {
     height: 75%;
     width: 75%;
-    background-color: red;
+    background-color: #D2D2D2;
     margin: 0 auto;
+    
 }
 
 .name {
-    text-align: center;
+    
     padding: 20px;
 }
 

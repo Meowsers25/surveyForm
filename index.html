@@ -4,9 +4,17 @@
     <meta charset="UTF-8">
     <title>Survey Form</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  
+  
 </head>
 <body>
     <div class="title">
+        <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/41317-200.png"></img>
         <h1>PARL Adoption Form</h1>
     </div>
     
@@ -60,6 +68,14 @@
         </div>
     </form>
     </div>
+    <script>
+  /* global $ */
+$(document).ready(function(){
+    $("form").submit(function(){
+        alert("Submitted Form");
+    });
+});
+</script>
     
     
 </body>
