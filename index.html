@@ -1,85 +1,74 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Survey Form</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
-    <script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
-  
-  
+	<meta charset="UTF-8">
+	<title>Survey Form</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js">
+	</script>
 </head>
 <body>
-    <header class="title" id="myform">
-        <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/41317-200.png"></img>
-        <h1>PARL Dog Adoption Form</h1>
-    </header>
-    
-    <div class="entries">
-    <form action="/PARL_adoption.php">
-        
-        <div class="name">
-          * Enter Name: <input type="text" class="nombre" name="name" placeholder="Name" required>
-        </div>
-        
-        <div class="email">
-          * Email: <input name="email" type="email" class="emailio" placeholder="Email" required>
-        </div>
-        <div class="quantity">
-            Quantity (between 1 and 2):
-            <input type="number" name="quantity" class="number" min="1" max="2" required>
-        </div>
-        
-        <div class="button">
-        <fieldset>
-            <legend class="legend">Preference</legend>
-            Male<input type="radio" name="sex" class="radio" value="male" checked></br>
-            Female<input type="radio" name="sex" class="radio" value="female"></br>
-            Either<input type="radio" name="sex" class="radio" value="either">
-        </fieldset>
-        </div>
-       
-       
-        <div class="checkbox">
-            <fieldset>
-                <legend class="legend">Size</legend>
-            Less than 20 pounds<input type="checkbox" name="size" value="small" checked></br>
-            20 - 40 pounds<input type="checkbox" name="size" value="medium"></br>
-            40+ pounds<input type="checkbox" name="size" value="large">
-            </fieldset>
-        </div>
-        <div class="dropdown">
-            Describe your family: 
-            <select>
-                <option value="none">No pets/kids</option>
-                <option value="none">Kids</option>
-                <option value="none">Pets and Kids</option>
-            </select>
-        </div>
-        <div class="text">
-           
-            <textarea class="textarea" rows="4" cols="50">Please add any additional comments or concerns</textarea>
-        </div>
-        <div class="last">
-           <input  type="submit" class="btn">
-           
-        </div>
-    </form>
-    </div>
-    <script>
-  /* global $ */
-$(document).ready(function(){
-    $("form").submit(function(){
-        alert("Thank You! Form Submitted");
-        
-    });
-});
-//document.getElementById('').value="";
-</script>
-    
-    
+	<header class="title" id="myform">
+		<img alt="logo of a heart with a paw print" src="https://d30y9cdsu7xlg0.cloudfront.net/png/41317-200.png">
+		<h1>PARL Dog Adoption Form</h1>
+	</header>
+	<div class="entries">
+		<form action="/PARL_adoption.php" id="configform" name="configform">
+			<div class="name">
+				* Enter Name: <input class="nombre" name="name" placeholder="Name" required="" type="text">
+			</div>
+			<div class="email">
+				* Email: <input class="emailio" name="email" placeholder="Email" required="" type="email">
+			</div>
+			<div class="quantity">
+				Quantity (between 1 and 2): <input class="number" max="2" min="1" name="quantity" required="" type="number">
+			</div>
+			<div class="button">
+				<fieldset>
+					<legend class="legend">Preference</legend> Male<input checked class="radio" name="sex" type="radio" value="male"><br>
+					Female<input class="radio" name="sex" type="radio" value="female"><br>
+					Either<input class="radio" name="sex" type="radio" value="either">
+				</fieldset>
+			</div>
+			<div class="checkbox">
+				<fieldset>
+					<legend class="legend">Size</legend> Less than 20 pounds<input checked name="size" type="checkbox" value="small"><br>
+					20 - 40 pounds<input name="size" type="checkbox" value="medium"><br>
+					40+ pounds<input name="size" type="checkbox" value="large">
+				</fieldset>
+			</div>
+			<div class="dropdown">
+				Describe your family: <select>
+					<option value="none">
+						No pets/kids
+					</option>
+					<option value="none">
+						Kids
+					</option>
+					<option value="none">
+						Pets and Kids
+					</option>
+				</select>
+			</div>
+			<div class="text">
+				<textarea class="textarea" cols="50" rows="4">Please add any additional comments or concerns</textarea>
+			</div>
+			<div class="last">
+				<input class="btn" type="submit">
+			</div>
+		</form>
+	</div>
+	<script>
+	    /* global $ */
+	   $(document).ready(function(){
+	      $("form").submit(function(){
+	          alert("Thank You! Form Submitted");
+	          
+	      });
+	   });
+	   document.getElementById('configform').reset();
+	   
+	</script>
 </body>
 </html>

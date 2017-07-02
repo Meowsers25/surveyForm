@@ -1,126 +1,100 @@
 body {
-    height: 100%;
-    margin: 0;
-    background-color: #D2D2D2;
+	height: 100%;
+	margin: 0;
+	background-color: #D2D2D2;
 }
-
 .title {
-    text-align: center;
-    font-family: 'Fredericka the Great', cursive;
-    font-size: x-large;
+	text-align: center;
+	font-family: 'Fredericka the Great', cursive;
+	font-size: x-large;
 }
-
 .entries {
-    height: 75%;
-    width: 55%;
-    background-color: white;
-    margin: 0 auto;
-     box-shadow: 10px 10px 5px #888888;
-   
-    
+	height: 75%;
+	width: 55%;
+	background-color: white;
+	margin: 0 auto;
+	box-shadow: 10px 10px 5px #888888;
 }
-
 .name {
-    font-size: 25px;
-    display: table;
-    margin: 0 auto;
-    padding: 20px;
+	font-size: 25px;
+	display: table;
+	margin: 0 auto;
+	padding: 20px;
 }
-
 .nombre {
-    
-    text-align: center;
-    height: 25px;
-    width: 150px;
-    background-color: #D8FCF7;
+	text-align: center;
+	height: 25px;
+	width: 150px;
+	background-color: #D8FCF7;
 }
-
-
 .email {
-    font-size: 25px;
-    display: table;
-    margin : 0 auto;
-    text-align: center;
-    padding: 20px;
+	font-size: 25px;
+	display: table;
+	margin: 0 auto;
+	text-align: center;
+	padding: 20px;
 }
-
 .emailio {
-    height: 25px;
-    width: 150px;
-    background-color: #D8FCF7;
-    text-align: center;
+	height: 25px;
+	width: 150px;
+	background-color: #D8FCF7;
+	text-align: center;
 }
 .quantity {
-    font-size: 25px;
-    display: table;
-    margin : 0 auto;
-    text-align: center;
-    padding: 20px;
+	font-size: 25px;
+	display: table;
+	margin: 0 auto;
+	text-align: center;
+	padding: 20px;
 }
-
 .number {
-    height: 25px;
-    background-color: #D8FCF7;
+	height: 25px;
+	background-color: #D8FCF7;
 }
-
 .button {
-    display: block;
-    margin : 0 auto;
-    text-align: center;
-    padding: 20px;
-    width: 250px;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	padding: 20px;
+	width: 250px;
 }
-
-
-
 .checkbox {
-    display: block;
-    margin : 0 auto;
-    text-align: center;
-    padding: 20px;
-    width: 250px;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	padding: 20px;
+	width: 250px;
 }
-
 .legend {
-    
-    font-size: 25px;
+	font-size: 25px;
 }
-
 fieldset {
-    background-color: #D8FCF7;
+	background-color: #D8FCF7;
 }
-
 select {
-    background-color: #D8FCF7;
+	background-color: #D8FCF7;
 }
-
 .dropdown {
-    text-align: center;
-    padding: 20px;
+	text-align: center;
+	padding: 20px;
 }
-
 .text {
-    padding: 20px;
-    
+	padding: 20px;
 }
-
 .textarea {
-    text-align: center;
-    display: block;
-    margin: 0 auto;
-    background-color: #D8FCF7;
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+	background-color: #D8FCF7;
 }
-
 .btn {
-    display: block;
-    margin: 0 auto;
-    width: 10em;
-    height: 25px;
-    background-color: #FFFF7F;
-    box-shadow: 5px 5px 5px #888888;
-    
+	display: block;
+	margin: 0 auto;
+	width: 10em;
+	height: 25px;
+	background-color: #FFFF7F;
+	box-shadow: 5px 5px 5px #888888;
 }
-
 .last {
-    padding: 20px 20px 40px 20px;
+	padding: 20px 20px 40px 20px;
 }
