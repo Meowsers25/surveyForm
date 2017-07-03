@@ -16,7 +16,7 @@
 	<div class="entries">
 		<form action="/PARL_adoption.php" id="configform" name="configform">
 			<div class="name">
-				* Enter Name: <input class="nombre" name="name" placeholder="Name" required="" type="text">
+				* Enter Name: <input class="nombre" name="name" placeholder="Name" pattern="[A-Za-z\s]+" title="Only Letters Accepted" required="">
 			</div>
 			<div class="email">
 				* Email: <input class="emailio" name="email" placeholder="Email" required="" type="email">
